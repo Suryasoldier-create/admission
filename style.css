@@ -1,0 +1,129 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    margin:0px;
+    padding:0px;
+    background-color: #bdf;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.my_menue ul{
+    position: fixed;
+    width:100%;
+    overflow-x:none ;
+    height:55px ;
+    text-align: top;
+    background-color: rgb(93, 93, 196);
+}
+.menue li{
+    list-style:none;
+    width: 150px;
+    height:52px;
+    margin: 5px;
+    text-align:center;
+    line-height: 50px;
+    float: left;
+}
+.menue ul{
+    
+    display: none;
+    margin: 0px;
+}
+.menue li ul{
+    display: none;
+}
+.menue li:hover ul{
+    position: relative;
+    display: block;
+    height: 10px;
+    margin: 1px;
+}
+.list{
+    background-color: rgb(70, 5, 132);
+    margin: 0px auto;
+}
+.menue li a{
+    color:rgb(66, 202, 138);
+    display: block;
+    border: 2px;
+}
+.menue li a:hover{
+    color:blue;
+    background-color: rgb(70, 5, 132);
+    display: block;
+
+}
+.menue li a:hover ul{
+    background-color: rgb(18, 18, 136);
+}
+.College{
+    font-size:20px ;
+    width:0px;
+}
+.College{
+    color:white;
+}   
+
+.menue ul li{
+   
+    margin: 0px;
+}
+.why_choose{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    margin: 0 auto ;
+    width: 300px;
+    text-align:center;
+    font-size:30px;
+    background-color: blanchedalmond;
+    border: 2px solid rgb(222, 102, 102);
+}
+.div_section{
+    width: 20%;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+.div_section1 h2{
+    color:rgb(220, 59, 59);
+    margin: 20px;
+}
+.div_section1{
+    margin: 20px;
+}
+
+.float{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color:rgb(183, 183, 225);
+    padding:8px;
+    width: 300px;
+    height: 300px;
+    margin: 0px 42px;
+    float: left;
+    
+}
+.content{
+    position:absolute;
+    z-index: -1;
+    align:center;
+    top:140%;
+}
+.content p{
+    margin-top: 20px;
+}
+.form{
+    text-align: center;
+    color: red;
+    text-shadow:bold;
+}
+.contact_us{
+    margin: 20px;
+} 
