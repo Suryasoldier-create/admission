@@ -1,129 +1,177 @@
-*{
-    padding:0px;
-    margin:0px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
-    margin:0px;
-    padding:0px;
+
+body {
     background-color: #bdf;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
-ul{
-    margin: 0px;
-    padding: 0px;
-}
-.my_menue ul{
+
+
+.my_menue {
     position: fixed;
-    width:100%;
-    overflow-x:none ;
-    height:55px ;
-    text-align: top;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: rgb(93, 93, 196);
 }
-.menue li{
-    list-style:none;
-    width: 150px;
-    height:52px;
-    margin: 5px;
-    text-align:center;
-    line-height: 50px;
-    float: left;
+
+.menue {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
 }
-.menue ul{
-    
-    display: none;
-    margin: 0px;
-}
-.menue li ul{
-    display: none;
-}
-.menue li:hover ul{
+
+.menue li {
+    padding: 0 15px;
     position: relative;
-    display: block;
-    height: 10px;
-    margin: 1px;
 }
-.list{
-    background-color: rgb(70, 5, 132);
-    margin: 0px auto;
-}
-.menue li a{
-    color:rgb(66, 202, 138);
-    display: block;
-    border: 2px;
-}
-.menue li a:hover{
-    color:blue;
-    background-color: rgb(70, 5, 132);
-    display: block;
 
+.menue li a {
+    color: rgb(66, 202, 138);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
 }
-.menue li a:hover ul{
-    background-color: rgb(18, 18, 136);
-}
-.College{
-    font-size:20px ;
-    width:0px;
-}
-.College{
-    color:white;
-}   
 
-.menue ul li{
-   
-    margin: 0px;
+.menue li:hover > a {
+    color: blue;
+    background-color: rgb(70, 5, 132);
 }
-.why_choose{
+
+.College {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: auto; 
+}
+
+
+.menue li ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgb(70, 5, 132);
+    width: 150px;
+    list-style: none;
+}
+
+.menue li:hover ul {
+    display: block;
+}
+#agi {
+    margin-top: 60px; 
+}
+
+#agi img {
     width: 100%;
-    text-align: center;
+    height: auto;
+    display: block;
 }
-h1{
-    margin: 0 auto ;
-    width: 300px;
-    text-align:center;
-    font-size:30px;
+
+h1 {
+    margin: 40px auto;
+    width: fit-content;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 30px;
     background-color: blanchedalmond;
     border: 2px solid rgb(222, 102, 102);
 }
-.div_section{
-    width: 20%;
-    height: 300px;
-    margin: 10px;
-    border: 1px solid gray;
-}
-.div_section1 h2{
-    color:rgb(220, 59, 59);
-    margin: 20px;
-}
-.div_section1{
-    margin: 20px;
+
+
+.div_section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
 }
 
-.float{
+.float {
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
-    background-color:rgb(183, 183, 225);
-    padding:8px;
-    width: 300px;
-    height: 300px;
-    margin: 0px 42px;
-    float: left;
-    
+    background-color: rgb(183, 183, 225);
+    padding: 25px;
+    width: 300px; 
+    min-height: 350px;
+    transition: transform 0.3s;
 }
-.content{
-    position:absolute;
-    z-index: -1;
-    align:center;
-    top:140%;
+
+.float:hover {
+    transform: translateY(-10px);
 }
-.content p{
-    margin-top: 20px;
-}
-.form{
+
+.content-wrapper {
+    position: relative;
+    padding: 40px 20px;
+    background-color: #bdf;
     text-align: center;
-    color: red;
-    text-shadow:bold;
 }
-.contact_us{
-    margin: 20px;
-} 
+
+.contact_us p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact_us img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.form {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgb(70, 5, 132);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menue {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .menue li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .College {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .float {
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        width: 90%;
+    }
+}
